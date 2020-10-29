@@ -10,14 +10,12 @@ export function redisDel (textbox:string) {
                 deleteKey=keyValuestr.slice(0,keyValuestr.indexOf(' ')) // 
                 if(window.localStorage.getItem(deleteKey) !== null) {
                     window.localStorage.removeItem(deleteKey)
-                   // if (window.localStorage.getItem(deleteKey) === null)
                         counter++;  
                 }
                 keyValuestr = keyValuestr.slice(keyValuestr.indexOf(' ')+1,)
             }else{     // only one key left to delete
                 if(window.localStorage.getItem(keyValuestr) !== null){
                     window.localStorage.removeItem(keyValuestr)
-                    //if (window.localStorage.getItem(keyValuestr) === null)
                         counter++;
                 }
                 break;

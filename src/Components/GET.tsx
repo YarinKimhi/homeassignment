@@ -11,7 +11,6 @@ export function redisGet (textbox:string) {
         if (Dummy !== null){
             try{
                 const itemValues = JSON.parse(Dummy) // need to check if dummy is json
-                console.log(itemValues)
                 const getnow = new Date()
                  if (getnow.getTime() > itemValues.expiry) {
                     localStorage.removeItem(key)
