@@ -11,10 +11,7 @@ import {redisExist} from  './Components/EXIST';
 
 
 class App extends Component {
-    constructor(props:any){
-        super(props)
-        this.state={clear:""}
-    }
+    
     
     containsWord(str:string, word:string) {
         return str.match(new RegExp("\\b" + word + "\\b")) != null;
